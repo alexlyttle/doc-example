@@ -15,15 +15,15 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: matlab-actions/setup-matlab@v3
       - uses: matlab-actions/run-command@v3
         with:
           command: |
             fileName = websave("MATLAB_DocMaker.mtlbx","https://github.com/mathworks/docmaker/releases/latest/download/MATLAB_DocMaker.mltbx");
             matlab.addons.install(fileName,"overwrite",true);
-      - uses: matlab-actions/run-build@v2
-      - uses: actions/upload-artifact@v4
+      - uses: matlab-actions/run-build@v3
+      - uses: actions/upload-artifact@v7
         with:
           name: toolbox
           path: "release/DocExample.mltbx"
