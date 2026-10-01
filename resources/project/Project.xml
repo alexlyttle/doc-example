@@ -25,6 +25,18 @@
                 <Info Name="Test" ReadOnly="READ_ONLY"/>
             </Label>
         </Category>
+        <Category Location="Deployment_Category_a72e2e12-d3c5-4f58-a6ec-50318d9d5bce">
+            <Info DataType="None" Name="Toolbox - Toolbox1" ReadOnly="0" SingleValued="0"/>
+            <Label Location="Deployment_ToolboxImageFile_a72e2e12-d3c5-4f58-a6ec-50318d9d5bce">
+                <Info Name="Toolbox Image File" ReadOnly="WRITABLE"/>
+            </Label>
+            <Label Location="Deployment_ToolboxAppGalleryFiles_a72e2e12-d3c5-4f58-a6ec-50318d9d5bce">
+                <Info Name="App Gallery File" ReadOnly="WRITABLE"/>
+            </Label>
+            <Label Location="Deployment_GettingStartedGuideFile_a72e2e12-d3c5-4f58-a6ec-50318d9d5bce">
+                <Info Name="Getting Started Guide" ReadOnly="WRITABLE"/>
+            </Label>
+        </Category>
     </Categories>
     <Info Location="ProjectData">
         <Info Name="DocExample"/>
@@ -58,6 +70,9 @@
                 </Info>
             </File>
         </File>
+        <File Location="toolbox.ignore">
+            <Info/>
+        </File>
     </Files>
     <Root Location="Extensions">
         <Extension Location="Information">
@@ -72,4 +87,10 @@
             <Info Ref="docs" Type="Relative"/>
         </Reference>
     </ProjectPath>
+    <Files Location="MathWorksDeploymentConfigs">
+        <DIR_SIGNIFIER Location="1">
+            <Info/>
+        </DIR_SIGNIFIER>
+        <Info configMapData="{}"/>
+    </Files>
 </project>
