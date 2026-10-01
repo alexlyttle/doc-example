@@ -6,15 +6,18 @@ plan = buildplan(localfunctions);
 plan("clean") = CleanTask;
 plan("check") = CodeIssuesTask;
 plan("test") = TestTask;
+plan("test").Dependencies = "check";
 
 doc = "tbx/docs";
 plan("doc").Inputs = doc; % source folder, /tbx/docmakerdoc
 plan("doc").Outputs = [fullfile(doc,"**","*.html"), ... % output HTML
     fullfile(doc,"resources"), ... % stylesheets and scripts
     fullfile(doc,"*.xml"), ... % index files
-    fullfile(doc,"helpsearch-v*")]; % search database folder 
+    fullfile(doc,"helpsearch-v*")]; % search database folder
 
-plan.DefaultTasks = ["check" "test" "doc" "package"];
+plan("package").Dependencies = ["test" "doc"];
+
+plan.DefaultTasks = "package";
 end
 
 function docTask(c)
