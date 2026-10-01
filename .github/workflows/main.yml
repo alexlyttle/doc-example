@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]    
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: matlab-actions/setup-matlab@v2.3.1
+      - uses: matlab-actions/run-build@v2
+      - uses: actions/upload-artifact@v4
+        with:
+          name: toolbox
+          path: "release/DocExample.mltbx"
