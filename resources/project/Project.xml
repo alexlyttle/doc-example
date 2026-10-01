@@ -42,36 +42,39 @@
         <Info Name="DocExample"/>
     </Info>
     <Files Location="Root">
-        <File Location="docs">
+        <File Location="tbx">
             <Info/>
             <DIR_SIGNIFIER Location="1">
                 <Info/>
             </DIR_SIGNIFIER>
-            <File Location="index.md">
+            <File Location="src">
                 <Info/>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="doubled.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
             </File>
-            <File Location="helptoc.md">
+            <File Location="docs">
                 <Info/>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="index.md">
+                    <Info/>
+                </File>
+                <File Location="helptoc.md">
+                    <Info/>
+                </File>
+                <File Location="getting-started.md">
+                    <Info/>
+                </File>
             </File>
-            <File Location="getting-started.md">
-                <Info/>
-            </File>
-        </File>
-        <File Location="src">
-            <Info/>
-            <DIR_SIGNIFIER Location="1">
-                <Info/>
-            </DIR_SIGNIFIER>
-            <File Location="doubled.m">
-                <Info>
-                    <Category UUID="FileClassCategory">
-                        <Label UUID="design"/>
-                    </Category>
-                </Info>
-            </File>
-        </File>
-        <File Location="toolbox.ignore">
-            <Info/>
         </File>
     </Files>
     <Root Location="Extensions">
@@ -80,11 +83,11 @@
         </Extension>
     </Root>
     <ProjectPath Location="Root">
-        <Reference Location="fcfd6953-e8cf-43fd-8f43-3d72bc2d2d9f">
-            <Info Ref="src" Type="Relative"/>
+        <Reference Location="4c6ee036-c3a9-4194-89d3-ab8dcc27bda5">
+            <Info Ref="tbx/src" Type="Relative"/>
         </Reference>
-        <Reference Location="8aeabdaf-582d-4b5a-98a1-2f2e1ddd57e1">
-            <Info Ref="docs" Type="Relative"/>
+        <Reference Location="157f7e55-5b13-4148-8de7-6989ff90cf04">
+            <Info Ref="tbx/docs" Type="Relative"/>
         </Reference>
     </ProjectPath>
     <Files Location="MathWorksDeploymentConfigs">
