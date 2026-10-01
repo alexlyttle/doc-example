@@ -13,7 +13,12 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - uses: matlab-actions/setup-matlab@v2.3.1
+      - uses: matlab-actions/setup-matlab@v3
+      - uses: matlab-actions/run-command@v3
+        with:
+          command: |
+            fileName = websave("MATLAB_DocMaker.mtlbx","https://github.com/mathworks/docmaker/releases/latest/download/MATLAB_DocMaker.mltbx");
+            matlab.addons.install(fileName,"overwrite",true);
       - uses: matlab-actions/run-build@v2
       - uses: actions/upload-artifact@v4
         with:
