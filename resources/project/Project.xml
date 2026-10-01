@@ -41,6 +41,9 @@
             <File Location="helptoc.md">
                 <Info/>
             </File>
+            <File Location="getting-started.md">
+                <Info/>
+            </File>
         </File>
         <File Location="src">
             <Info/>
