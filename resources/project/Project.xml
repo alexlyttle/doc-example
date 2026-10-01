@@ -29,4 +29,35 @@
     <Info Location="ProjectData">
         <Info Name="DocExample"/>
     </Info>
+    <Files Location="Root">
+        <File Location="docs">
+            <Info/>
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+        </File>
+        <File Location="src">
+            <Info/>
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <File Location="doubled.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+        </File>
+    </Files>
+    <Root Location="Extensions">
+        <Extension Location="Information">
+            <Info description=""/>
+        </Extension>
+    </Root>
+    <ProjectPath Location="Root">
+        <Reference Location="fcfd6953-e8cf-43fd-8f43-3d72bc2d2d9f">
+            <Info Ref="src" Type="Relative"/>
+        </Reference>
+    </ProjectPath>
 </project>
