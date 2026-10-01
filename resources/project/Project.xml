@@ -37,6 +37,18 @@
                 <Info Name="Getting Started Guide" ReadOnly="WRITABLE"/>
             </Label>
         </Category>
+        <Category Location="Deployment_Category_6e63a694-0cb6-4bd6-965c-7b7970d6d8e9">
+            <Info DataType="None" Name="Toolbox - Toolbox1 (1)" ReadOnly="0" SingleValued="0"/>
+            <Label Location="Deployment_ToolboxImageFile_6e63a694-0cb6-4bd6-965c-7b7970d6d8e9">
+                <Info Name="Toolbox Image File" ReadOnly="WRITABLE"/>
+            </Label>
+            <Label Location="Deployment_ToolboxAppGalleryFiles_6e63a694-0cb6-4bd6-965c-7b7970d6d8e9">
+                <Info Name="App Gallery File" ReadOnly="WRITABLE"/>
+            </Label>
+            <Label Location="Deployment_GettingStartedGuideFile_6e63a694-0cb6-4bd6-965c-7b7970d6d8e9">
+                <Info Name="Getting Started Guide" ReadOnly="WRITABLE"/>
+            </Label>
+        </Category>
     </Categories>
     <Info Location="ProjectData">
         <Info Name="DocExample"/>
@@ -75,6 +87,9 @@
                     <Info/>
                 </File>
             </File>
+            <File Location="toolbox.ignore">
+                <Info/>
+            </File>
         </File>
     </Files>
     <Root Location="Extensions">
@@ -94,6 +109,12 @@
         <DIR_SIGNIFIER Location="1">
             <Info/>
         </DIR_SIGNIFIER>
-        <Info configMapData="{}"/>
+        <Info configMapData="{&quot;DocExample&quot;:&quot;MathWorksDeploymentConfig{b3fdd59a-8c06-4c9e-8904-298f91ee6743}&quot;}"/>
+    </Files>
+    <Files Location="MathWorksDeploymentConfig{b3fdd59a-8c06-4c9e-8904-298f91ee6743}">
+        <DIR_SIGNIFIER Location="1">
+            <Info/>
+        </DIR_SIGNIFIER>
+        <Info ToolboxConfigModel="{&quot;entries&quot;:[{&quot;content&quot;:{},&quot;type&quot;:&quot;deployment.toolbox.model.ProjectStateValidationIssueList&quot;,&quot;uuid&quot;:&quot;4a51e884-9e70-4b1f-9a39-bd6cdd4fe12c&quot;},{&quot;content&quot;:{&quot;appGalleryLabel&quot;:{&quot;content&quot;:{&quot;categoryID&quot;:&quot;Deployment_Category_6e63a694-0cb6-4bd6-965c-7b7970d6d8e9&quot;,&quot;labelID&quot;:&quot;Deployment_ToolboxAppGalleryFiles_6e63a694-0cb6-4bd6-965c-7b7970d6d8e9&quot;},&quot;type&quot;:&quot;deployment.toolbox.model.ProjectLabel&quot;,&quot;uuid&quot;:&quot;344c532d-4561-430f-81e1-877ee7949bfd&quot;},&quot;authorEmail&quot;:&quot;a.j.lyttle@bham.ac.uk&quot;,&quot;authorName&quot;:&quot;Alex Lyttle&quot;,&quot;authorOrganization&quot;:&quot;University of Birmingham&quot;,&quot;description&quot;:&quot;Example toolbox with documentation.&quot;,&quot;gettingStartedGuideLabel&quot;:{&quot;content&quot;:{&quot;categoryID&quot;:&quot;Deployment_Category_6e63a694-0cb6-4bd6-965c-7b7970d6d8e9&quot;,&quot;labelID&quot;:&quot;Deployment_GettingStartedGuideFile_6e63a694-0cb6-4bd6-965c-7b7970d6d8e9&quot;},&quot;type&quot;:&quot;deployment.toolbox.model.ProjectLabel&quot;,&quot;uuid&quot;:&quot;6595e654-bcd1-41a0-90f4-1523f6056ea3&quot;},&quot;outputFileName&quot;:&quot;DocExample.mltbx&quot;,&quot;outputFolder&quot;:&quot;release&quot;,&quot;summary&quot;:&quot;Example toolbox with documentation.&quot;,&quot;supportedPlatforms&quot;:[&quot;Windows&quot;,&quot;Linux&quot;,&quot;Mac&quot;,&quot;MatlabOnline&quot;],&quot;toolboxFolder&quot;:&quot;tbx&quot;,&quot;toolboxImgLabel&quot;:{&quot;content&quot;:{&quot;categoryID&quot;:&quot;Deployment_Category_6e63a694-0cb6-4bd6-965c-7b7970d6d8e9&quot;,&quot;labelID&quot;:&quot;Deployment_ToolboxImageFile_6e63a694-0cb6-4bd6-965c-7b7970d6d8e9&quot;},&quot;type&quot;:&quot;deployment.toolbox.model.ProjectLabel&quot;,&quot;uuid&quot;:&quot;39d8fd4d-dfb4-479b-adf9-2da7227b4f1c&quot;},&quot;toolboxName&quot;:&quot;DocExample&quot;,&quot;toolboxVersion&quot;:&quot;1.0.0&quot;,&quot;uniqueId&quot;:&quot;115e8459-8b43-49e7-bd11-56c7a8602872&quot;},&quot;type&quot;:&quot;deployment.toolbox.model.ToolboxConfiguration&quot;,&quot;uuid&quot;:&quot;e9819f10-3cc2-46ee-ab97-85058a5d76a5&quot;}],&quot;packageUris&quot;:[&quot;http://schema.mathworks.com/mf0/deployment_toolbox_model/1.0.0&quot;],&quot;version&quot;:&quot;1.0&quot;}" displayName="DocExample" lastAccessed="1790851519986" type="Toolbox" uniqueId="6e63a694-0cb6-4bd6-965c-7b7970d6d8e9"/>
     </Files>
 </project>
