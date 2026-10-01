@@ -1,17 +1,9 @@
 function out = doubled(in)
-% Here is the short description.
+% DOUBLED doubles the value of the input number.
 %
-% Syntax
-% out = doubled(in)
+%   y = DOUBLED(x) returns twice the value of x.
 %
-% Input
-% in [double] - value to be doubled
-%
-% Output
-% out [double] - twice the input - 2*in
-%
-% Disclaimer
-% (c) 2026
+%   See also PLUS, TIMES
 
 out = 2*in;
 end
