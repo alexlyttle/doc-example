@@ -30,6 +30,8 @@ end
 
 function packageTask(~)
 info = ver( "docexample" ); % from Contents.m
+
+% Inherit options from project's Package Toolbox task
 opts = matlab.addons.toolbox.ToolboxOptions("DocExample.prj");
 opts.ToolboxVersion = string(info.Version);
 matlab.addons.toolbox.packageToolbox(opts);
