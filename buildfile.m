@@ -8,7 +8,7 @@ plan("check") = CodeIssuesTask;
 plan("test") = TestTask;
 plan("test").Dependencies = "check";
 
-doc = "tbx/docs";
+doc = fullfile("tbx", "docs");
 plan("doc").Inputs = doc; % source folder, /tbx/docmakerdoc
 plan("doc").Outputs = [fullfile(doc,"**","*.html"), ... % output HTML
     fullfile(doc,"resources"), ... % stylesheets and scripts
@@ -29,6 +29,10 @@ docindex(doc) % index
 end
 
 function packageTask(~)
+info = ver( "docexample" ); % from Contents.m
+
+% Inherit options from project's Package Toolbox task
 opts = matlab.addons.toolbox.ToolboxOptions("DocExample.prj");
+opts.ToolboxVersion = string(info.Version);
 matlab.addons.toolbox.packageToolbox(opts);
 end

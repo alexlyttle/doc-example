@@ -3,11 +3,14 @@ name: CI
 on:
   push:
     branches: [main]
+    tags:
+      - "v*.*.*"
   pull_request:
     branches: [main]
 
 env:
   DOCMAKER_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  TOOLBOX_FILE: release/DocExample.mltbx
 
 jobs:
   build:
@@ -17,6 +20,8 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - uses: matlab-actions/setup-matlab@v3
+        with:
+          release: R2026a
       - uses: matlab-actions/run-command@v3
         with:
           command: |
@@ -26,4 +31,9 @@ jobs:
       - uses: actions/upload-artifact@v7
         with:
           name: toolbox
-          path: "release/DocExample.mltbx"
+          path: ${{ env.TOOLBOX_FILE }}
+      - name: Release toolbox
+        uses: softprops/action-gh-release@v3
+        if: github.ref_type == 'tag'
+        with:
+          files: ${{ env.TOOLBOX_FILE }}
