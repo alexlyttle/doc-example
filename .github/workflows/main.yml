@@ -20,6 +20,8 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - uses: matlab-actions/setup-matlab@v3
+        with:
+          release: R2026a
       - uses: matlab-actions/run-command@v3
         with:
           command: |
