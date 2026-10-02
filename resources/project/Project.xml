@@ -59,19 +59,6 @@
             <DIR_SIGNIFIER Location="1">
                 <Info/>
             </DIR_SIGNIFIER>
-            <File Location="src">
-                <Info/>
-                <DIR_SIGNIFIER Location="1">
-                    <Info/>
-                </DIR_SIGNIFIER>
-                <File Location="doubled.m">
-                    <Info>
-                        <Category UUID="FileClassCategory">
-                            <Label UUID="design"/>
-                        </Category>
-                    </Info>
-                </File>
-            </File>
             <File Location="docs">
                 <Info/>
                 <DIR_SIGNIFIER Location="1">
@@ -89,6 +76,26 @@
             </File>
             <File Location="toolbox.ignore">
                 <Info/>
+            </File>
+            <File Location="docexample">
+                <Info/>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="doubled.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="Contents.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
             </File>
         </File>
         <File Location=".github">
@@ -113,11 +120,11 @@
         </Extension>
     </Root>
     <ProjectPath Location="Root">
-        <Reference Location="4c6ee036-c3a9-4194-89d3-ab8dcc27bda5">
-            <Info Ref="tbx/src" Type="Relative"/>
-        </Reference>
         <Reference Location="157f7e55-5b13-4148-8de7-6989ff90cf04">
             <Info Ref="tbx/docs" Type="Relative"/>
+        </Reference>
+        <Reference Location="f628bc8d-5bec-4672-874c-97634b48d680">
+            <Info Ref="tbx/docexample" Type="Relative"/>
         </Reference>
     </ProjectPath>
     <Files Location="MathWorksDeploymentConfigs">
